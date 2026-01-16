@@ -2412,7 +2412,7 @@ async function fetchLastUserInfo() {
             };
         }
         
-        const gasWebAppUrl = 'https://script.google.com/macros/s/AKfycbxB1seYsi3QCOyIHrWyCoWAo_rUQBJj-MlLZy88ZSCd3gLLIHIuJVYQMoJgrMzpederXQ/exec';
+        const gasWebAppUrl = 'https://script.google.com/macros/s/AKfycbzFZCMglevY2x4GkHXl6Y_ZyIHU7RqkgqMU8HtqA1LymvOsATx5C38RicKG-PpZTEg/exec';
         const response = await fetch(
             `${gasWebAppUrl}?action=getLastUser&spreadsheetId=${encodeURIComponent(targetSpreadsheetInfo.spreadsheetId)}&sheetName=${encodeURIComponent(targetSpreadsheetInfo.sheetName)}`
         );
@@ -2564,7 +2564,7 @@ async function checkUserHasSubmittedJobCompleted(userName, jobCompletedOption) {
             return false;
         }
         
-        const gasWebAppUrl = 'https://script.google.com/macros/s/AKfycbxB1seYsi3QCOyIHrWyCoWAo_rUQBJj-MlLZy88ZSCd3gLLIHIuJVYQMoJgrMzpederXQ/exec';
+        const gasWebAppUrl = 'https://script.google.com/macros/s/AKfycbzFZCMglevY2x4GkHXl6Y_ZyIHU7RqkgqMU8HtqA1LymvOsATx5C38RicKG-PpZTEg/exec';
         const response = await fetch(
             `${gasWebAppUrl}?action=checkUserJobCompleted&spreadsheetId=${encodeURIComponent(targetSpreadsheetInfo.spreadsheetId)}&sheetName=${encodeURIComponent(targetSpreadsheetInfo.sheetName)}&userName=${encodeURIComponent(userName)}&jobCompleted=${encodeURIComponent(jobCompletedOption)}`
         );
